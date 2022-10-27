@@ -47,17 +47,6 @@ function App() {
     return;
     }
   }
-  function dotChecker(string){
-    const x = string.split('');
-    for(let i = x.length; i > 0; i--)
-    {
-      if(operators.includes(x[i]))
-      {
-        const y = x.slice(i, x.length)
-        return y.includes('.');
-      }
-    }
-  }
   return (
     <div id="frame" className="App">
       <Display value={value} />

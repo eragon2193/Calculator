@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import {evaluate} from 'mathjs'
+import {evaluate, round} from 'mathjs'
 
 export function ButtonLayout(props){
   const Clear = () => {
@@ -11,7 +11,7 @@ export function ButtonLayout(props){
   }
   const Calculate = () => {
     const answer = evaluate(props.value);
-    props.setValue(answer.toString());
+    props.setValue((round((answer + Number.EPSILON) * 10000) / 10000).toString());
   }
   const markers = [
     {1:'/',2:'divide'},
