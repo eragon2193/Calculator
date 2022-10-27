@@ -11,7 +11,7 @@ export function ButtonLayout(props){
   }
   const Calculate = () => {
     const answer = evaluate(props.value);
-    props.setValue((round((answer + Number.EPSILON) * 10000) / 10000).toString());
+    props.setValue((round((answer + Number.EPSILON) * 100000) / 100000).toString());
   }
   const markers = [
     {1:'/',2:'divide'},
