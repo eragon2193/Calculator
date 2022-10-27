@@ -1,6 +1,5 @@
 *{
-  user-select: none;
-  border:1px solid black;
+  user-select: none;  
 }
 body {
   margin: 0;
@@ -16,18 +15,20 @@ code {
     monospace;
 }
 #frame {
+  border:5px solid black;
   margin:100px auto;
   width:500px;
   height:600px;
   background-color:darkslategray;
 }
 #displayo {
+  border: 2px solid black;
   overflow:hidden;
   display:flex;
   flex-direction: column;
   align-items: flex-end;
   background-color:#4c8080;
-  margin:20px 20px 20px 20px;
+  margin:20px;
   height: 100px;
   width:450px;
 }
@@ -56,6 +57,7 @@ code {
 .button  {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size:48px;
+  border: 1px solid black;
 }
 #clear{
   grid-column: span 2;
